@@ -8,6 +8,10 @@ spring:
   kafka:
     bootstrap-servers: localhost:9092
     consumer:
-      group-id: my-group
+      group-id: my-group ,midas-consumer-group
+
+      auto-offset-reset: earliest
     producer:
       acks: all
+    listener:
+      topic: # The Kafka topic will be specified here
