@@ -1,0 +1,13 @@
+# application.yml
+
+general:
+  kafka-topic: my-kafka-topic
+
+# Kafka server properties
+spring:
+  kafka:
+    bootstrap-servers: localhost:9092
+    consumer:
+      group-id: my-group
+    producer:
+      acks: all
